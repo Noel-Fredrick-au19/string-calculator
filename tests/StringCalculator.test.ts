@@ -1,5 +1,4 @@
-//@ts-ignore
-import StringCalculator from '../src/StringCalculator';
+import StringCalculator from '../src/StringCalculator'; 
 
 describe('StringCalculator', () => {
   let calculator: StringCalculator;
@@ -8,7 +7,8 @@ describe('StringCalculator', () => {
     calculator = new StringCalculator();
   });
 
-  it('should return 0 for an empty string', () => {
-    expect(calculator.add('')).toBe(0);
+  it('should return the sum of one number', () => {
+    expect(calculator.add('1')).toBe(1);
   });
-});
+
+})
