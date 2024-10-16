@@ -15,4 +15,9 @@ describe('StringCalculator', () => {
     expect(calculator.add('')).toBe(0);
   });
 
+  it('should handle new lines between numbers', () => {
+    expect(calculator.add('1\n2,3')).toBe(6);
+  });
+  
+
 })
